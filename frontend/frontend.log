@@ -1,0 +1,182 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.216.27:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:45:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:45:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:frontend:Error storing data: HTTPConnectionPool(host='backend', port=5001): Max retries exceeded with url: /store_data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe5147b8bb0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:45:32] "[35m[1mPOST /store_data HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.216.27:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:48:39] "POST /store_data HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:48:57] "POST /store_data HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.216.27:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:frontend:Exception on /store_data [POST]
+Traceback (most recent call last):
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/slvk/pea/frontend/frontend.py", line 23, in store_data
+    return redirect(url_for('index'))  # Redirect to index page after successful storage
+NameError: name 'redirect' is not defined
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:52:53] "[35m[1mPOST /store_data HTTP/1.1[0m" 500 -
+ERROR:frontend:Exception on /store_data [POST]
+Traceback (most recent call last):
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/slvk/pea/frontend/frontend.py", line 23, in store_data
+    return redirect(url_for('index'))  # Redirect to index page after successful storage
+NameError: name 'redirect' is not defined
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:53:04] "[35m[1mPOST /store_data HTTP/1.1[0m" 500 -
+ERROR:frontend:Exception on /store_data [POST]
+Traceback (most recent call last):
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/slvk/pea/frontend/frontend.py", line 23, in store_data
+    data = {'name': name}
+NameError: name 'redirect' is not defined
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:53:18] "[35m[1mPOST /store_data HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.216.27:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:53:41] "POST /store_data HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:53:48] "POST /store_data HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.216.27:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:frontend:Data stored successfully
+ERROR:frontend:Exception on /store_data [POST]
+Traceback (most recent call last):
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/slvk/pea/frontend/frontend.py", line 28, in store_data
+    return redirect(url_for('index'))  # Redirect to the index page
+NameError: name 'redirect' is not defined
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:54:56] "[35m[1mPOST /store_data HTTP/1.1[0m" 500 -
+INFO:frontend:Data stored successfully
+ERROR:frontend:Exception on /store_data [POST]
+Traceback (most recent call last):
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/slvk/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/slvk/pea/frontend/frontend.py", line 28, in store_data
+    return redirect(url_for('index'))  # Redirect to the index page
+NameError: name 'redirect' is not defined
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:54:59] "[35m[1mPOST /store_data HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.216.27:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:56:45] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:56:46] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:56:53] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:56:53] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:01] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:01] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:06] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:06] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:11] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:11] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:14] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:15] "GET / HTTP/1.1" 200 -
+ERROR:frontend:Error storing data: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5001/store_data
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:00] "[35m[1mPOST /store_data HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.216.27:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:44] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:44] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:51] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:51] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:55] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:56] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:58] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:59] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:03] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:03] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:07] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:07] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:12] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:13] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:16] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:16] "GET / HTTP/1.1" 200 -
+INFO:frontend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:21] "[32mPOST /store_data HTTP/1.1[0m" 302 -
+INFO:frontend:Rendering index page
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:22] "GET / HTTP/1.1" 200 -

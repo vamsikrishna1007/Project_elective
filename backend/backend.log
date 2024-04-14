@@ -1,0 +1,75 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.24.216.27:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.24.216.27:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.24.216.27:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:48:39] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:48:57] "POST /store_data HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.24.216.27:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:52:53] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:53:04] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:53:18] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:53:41] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:53:48] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:54:56] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:54:59] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:56:45] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:56:53] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:01] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:06] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:11] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 15:57:14] "POST /store_data HTTP/1.1" 200 -
+ERROR:backend:Error storing data: no such table: example_table
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:00] "[35m[1mPOST /store_data HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.24.216.27:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:44] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:51] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:55] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:00:58] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:03] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:07] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:12] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:16] "POST /store_data HTTP/1.1" 200 -
+INFO:backend:Data stored successfully
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 16:01:21] "POST /store_data HTTP/1.1" 200 -
